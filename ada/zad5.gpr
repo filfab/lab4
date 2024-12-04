@@ -1,0 +1,14 @@
+project Zad5 is
+    for Exec_Dir use ".";
+    for Source_Dirs use ("./zad5/src/**");
+    for Object_Dir use "./zad5/obj/";
+    for Main use ("main.adb");
+
+    package Compiler is
+        for Switches ("Ada") use ("");
+    end Compiler;
+
+    package Builder is
+      for Executable ("main.adb") use "zad5.out";
+    end Builder;
+end Zad5;
