@@ -11,7 +11,6 @@ begin
       Put_Line("// COMMANDS : pn | pr | ip");
       Put("<< command: ");
       Get(command);
-      Put("<< parameter: ");
       Get(parameter);
    elsif Argument_Count = 2 then
       command := Argument(1);
